@@ -62,7 +62,7 @@ const Main = () => {
                     </p>
                 </div>
             ) : (
-                <div className="w-full max-w-2xl  h-[80vh] overflow-y-auto  bg-white/80 text-black text-lg p-4 rounded-xl shadow-md mt-4 ">
+                <div className="w-full max-w-2xl   h-[75vh] sm:h-[80vh] overflow-y-auto  bg-white/80 text-black text-lg p-4 rounded-xl shadow-md mt-4 ">
 
                     {/* Chat Messages */}
                     {messages.map((msg, index) => (
