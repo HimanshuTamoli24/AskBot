@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addMessage } from "../../store/gemini.slice.js";
-import Container from "../container/container";
+import Containers from "../container/Containers.jsx";
 import { IoIosSend } from "react-icons/io";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { AiFillPauseCircle } from "react-icons/ai";
@@ -49,7 +49,7 @@ const Main = () => {
     };
 
     return (
-        <Container className="w-full h-screen flex flex-col items-center justify-between relative">
+        <Containers className="w-full h-screen flex flex-col items-center justify-between relative">
 
             {/* Welcome Section */}
             {messages.length === 0 ? (
@@ -98,7 +98,7 @@ const Main = () => {
             </div>
 
 
-        </Container>
+        </Containers>
     );
 };
 

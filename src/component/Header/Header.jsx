@@ -1,9 +1,9 @@
 import React from 'react'
-import Container from '../container/container'
+import Containers from '../container/Containers.jsx'
 import { GoTriangleDown } from "react-icons/go";
 const Header = () => {
     return (
-        <Container className='w-full '>
+        <Containers className='w-full '>
             <div className='flex justify-between  h-14  mt-1 mx-2.5 items-center'>
                 <div className=' inline-flex  items-center hover:border rounded-3xl bg-gradient-to-r from-blue-500/90 via-purple-500/80 to-pink-500/70 text-white py-1 px-2.5'>
                     Ask Bot
@@ -20,7 +20,7 @@ const Header = () => {
                 </div>
             </div>
 
-        </Container>
+        </Containers>
     )
 }
 

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleSidebar } from "../../store/sidebar.js";
-import Container from "../container/container";
+import Containers from "../container/Containers.jsx";
 import { Menu, CirclePlus, FileText, MoreVertical, Brain, HelpCircle, History, Settings, Gem, ChevronDown, ChevronUp } from "lucide-react";
 
 const Sidebar = () => {
@@ -26,7 +26,7 @@ const Sidebar = () => {
     };
 
     return (
-        <Container className={`hidden sm:block min-h-screen bg-[#f0f3f8] transition-all duration-300 ease-in-out 
+        <Containers className={`hidden sm:block min-h-screen bg-[#f0f3f8] transition-all duration-300 ease-in-out 
             ${menuOpen ? "w-1/5" : "w-16"}`}>
 
             {/* Sidebar Toggle Button */}
@@ -122,7 +122,7 @@ const Sidebar = () => {
                     ))}
                 </div>
             </div>
-        </Container>
+        </Containers>
     );
 };
 
