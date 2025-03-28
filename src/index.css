@@ -1,0 +1,5 @@
+@import "tailwindcss";
+/* Disable scrolling for the entire website */
+html, body ,.hide {
+    overflow: hidden;
+}
